@@ -1,0 +1,39 @@
+body{
+    background-image: url('/assets/BG.png');
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.whole{
+    display: grid;
+    grid-template-columns: 45% 55%;
+    height: 100%;
+}
+.formside{
+    padding: 10%;
+    background-color: rgba(248, 246, 217, 0.39);
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+}
+.gsign p{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    border-style:solid;
+    border-width: 1px;
+    border-color: rgb(108, 243, 96);
+}
+.gsign img{
+    height: 15px;
+    width: 15px;
+}
+input{
+    width:100%;
+}
+button{
+    width: 100%;
+    color: rgb(247, 247, 247);
+    background-color: rgb(6, 216, 6);
+    border-width: 0cap;
+}
