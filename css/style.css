@@ -1,8 +1,9 @@
 body{
     background-image: url('/assets/BG.png');
-    background-size:100%;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position:center;
+    font-weight: lighter;
 }
 .whole{
     display: grid;
@@ -11,10 +12,11 @@ body{
 }
 .formside{
     padding: 10%;
-    background-color: rgba(248, 246, 217, 0.39);
+    background-color: rgba(248, 246, 217, 0.60);
     display: flex;
     flex-direction: column;
     column-gap: 50px;
+    margin: 10%;
 }
 .gsign p{
     display:flex;
@@ -23,6 +25,8 @@ body{
     border-style:solid;
     border-width: 1px;
     border-color: rgb(108, 243, 96);
+    height: 25px;
+    padding-left: 30%;
 }
 .gsign img{
     height: 15px;
@@ -30,10 +34,39 @@ body{
 }
 input{
     width:100%;
+    height: 20px;
+    border-radius: 5%;
+    border-width: 1px;
+    
+
 }
 button{
     width: 100%;
     color: rgb(247, 247, 247);
     background-color: rgb(6, 216, 6);
     border-width: 0cap;
+    height: 25px;
+    border-radius: 5%;
+}
+form{
+    gap: 20%;
+}
+p{
+    text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+
+    .whole{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+    }
+    body{
+    height:cover;
+    }
+    .gsign p{
+        font-size: .7rem;
+        text-align: center;
+    }
 }
